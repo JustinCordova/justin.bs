@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My First Bootstrap Page</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav
+          class="navbar navbar-expand-md justify-content-start bg-#1a1b26 navbar-dark col-12"
+        >
+          <div id="mac-controls">
+            <a href="#home" class="mac-circle red-circle"></a>
+            <a href="#home" class="mac-circle yellow-circle"></a>
+            <a href="#home" class="mac-circle green-circle"></a>
+          </div>
+          <!-- Brand -->
+          <a class="navbar-brand" href="index.html">justin cordova</a>
+          <!-- Responsive Button for the smaller menu -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <!-- Links -->
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbardrop"
+                  data-toggle="dropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="project1.html">Project 1</a>
+                  <a class="dropdown-item" href="project2.html">Project 2</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="experience.html">Experience</a>
+              </li>
+
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbardrop"
+                  data-toggle="dropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Photography
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="album1.html">Album 1</a>
+                  <a class="dropdown-item" href="album2.html">Album 2</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!--<div class="row">
+        <p class="col-1">Col 1</p>
+        <p class="col-1">Col 2</p>
+        <p class="col-1">Col 3</p>
+        <p class="col-1">Col 4</p>
+        <p class="col-1">Col 5</p>
+        <p class="col-1">Col 6</p>
+        <p class="col-1">Col 7</p>
+        <p class="col-1">Col 8</p>
+        <p class="col-1">Col 9</p>
+        <p class="col-1">Col 10</p>
+        <p class="col-1">Col 11</p>
+        <p class="col-1">Col 12</p>
+        </div>-->
+        <!--Jumbotron-->
+        <div class="mt-0 p-5 custom-jumbotron rounded custom-width">
+          <div class="row">
+            <!-- Left Column: Image -->
+            <div
+              class="col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <img
+                class="jusy"
+                src="assets/img/jusy.jpg"
+                alt="Justin's Image"
+              />
+            </div>
+
+            <div class="col-md-8">
+              <!-- spanning 8 columns -->
+              <div>
+                <h1 class="hello">
+                  hi, im <span class="highlight">justin</span>
+                </h1>
+              </div>
+
+              <!-- Paragraph Text Right Below the Heading -->
+              <div class="mt-4">
+                <p class="intro" style="max-width: 75%">
+                  <!-- Limit the intro text to 9 columns (75% of 12 columns) -->
+                  I'm a software engineer seeking an internship to develop my
+                  programming skills.
+                  <br /><br />
+                  I love making games and systems/web applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cards Section -->
+      <div class="container mt-4" style="max-width: 900px">
+        <!-- Adjust max-width as needed -->
+        <div class="row d-flex justify-content-center">
+          <!-- First Card -->
+          <div class="col-md-4 mb-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="assets/img/album1.JPG"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ocean City Album</h5>
+                <p class="card-text">A fun adventure with my family.</p>
+                <a href="album1.html" class="btn btn-primary">Ocean City</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Card -->
+          <div class="col-md-4 mb-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="assets/img/album2.JPG"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bootstrap Project</h5>
+                <p class="card-text">A project.</p>
+                <a href="album2.html" class="btn btn-primary"
+                  >Bootstrap Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Card -->
+          <div class="col-md-4 mb-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="assets/img/album3.JPG"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mountain Adventure</h5>
+                <p class="card-text">Hiking and camping in the mountains.</p>
+                <a href="album3.html" class="btn btn-primary"
+                  >Mountain Adventure</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <footer class="footer page-footer font-small">
+        <div class="container">
+          <div class="row">
+            <span class="text-muted"
+              >&copy; Justin Cordova, 2024 | Terms Of Use | Privacy
+              Statement</span
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Javascript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

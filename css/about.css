@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Cabin&display=swap");
+
+body {
+  background-color: #1a1b26;
+}
+
+/* Mac Controls Styling */
+#mac-controls {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.mac-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.red-circle {
+  background-color: #ff5f57;
+}
+
+.yellow-circle {
+  background-color: #ffbd2e;
+}
+
+.green-circle {
+  background-color: #28c840;
+}
+
+.mac-circle:hover {
+  opacity: 0.8;
+}
+
+/* Navbar Styling */
+.navbar-brand {
+  color: #9aa5ce !important;
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+  margin-top: -5px;
+  margin-left: 100px;
+}
+.nav-link {
+  color: #9aa5ce !important;
+  font-family: "Cabin", sans-serif;
+  font-size: 14px;
+}
+
+/* Footer Styling */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1e1f2f;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.5rem;
+}
