@@ -69,32 +69,88 @@ body {
   border-radius: 8px;
   float: left;
   transition: transform 0.3s ease;
+  
 }
 .jusy:hover {
     transform: scale(1.3);
+    
+}
+/* Reseting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
 }
 
+.hello::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: #4FC3F7;
+  animation: cursorBlink 0.8s steps(3) infinite;
+}
+
+@keyframes cursorBlink {
+  0%, 75% {
+      opacity: 1;
+  }
+  76%, 100% {
+      opacity: 0;
+  }
+}
+
+.hello {
+  position: relative;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
+}
 /* hi, im justin */
 h1.hello {
+  position: relative;
   color: #9aa5ce;
-  font-size: 80px;
   white-space: nowrap;
-  display: inline-block;
+  letter-spacing: 5px;
+  font-size: 4rem;
   overflow: hidden;
-  border-right: 2px solid #000; 
-  animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
-}
-.highlight {
-  color: #f7768e !important;
-}
-/* Define typing and blinking animations */
-@keyframes typing {
-  from { width: 0; }
-  to { width: 50%; }
+  margin-bottom: 0;
+  animation: type 5s steps(13) infinite;
 }
 
-@keyframes blink-caret {
-  50% { border-color: transparent; }
+.hello .highlight {
+  color: #f7768e; /* Highlight color (yellow) for the "justin" part */
+}
+
+@keyframes type {
+  0%, 100% {
+      width: 0px;
+  }
+  30%, 60% {
+      width: 394.09px; /* Adjust width according to text length */
+  }
+}
+
+/* Adjustments for smaller screens */
+@media(max-width: 330px) {
+  .hello h1 {
+      font-size: 3rem;
+      animation: type 5s steps(10) infinite;
+  }
+
+  @keyframes type {
+      0%, 100% {
+          width: 0px;
+      }
+      30%, 60% {
+          width: 305px; /* Adjust width for smaller screens */
+      }
+  }
+}
+
+.mt-4-custom {
+  margin-top: 100px; /* Adjust the value as needed */
 }
 
 .intro {
@@ -126,6 +182,10 @@ h1.hello {
   background-color: #f7768e; /* Darker shade for hover */
 }
 
+.card-img-top {
+  height: 140px;
+  width: 270px;
+}
 
 /* Footer Styling */
 .footer {
