@@ -90,7 +90,7 @@ body {
   right: 0;
   width: 2px;
   height: 100%;
-  background: #4FC3F7;
+  background: #9aa5ce;
   animation: cursorBlink 0.8s steps(3) infinite;
 }
 
@@ -109,10 +109,11 @@ body {
 }
 /* hi, im justin */
 h1.hello {
-  position: relative;
+  font-weight: bold;
   color: #9aa5ce;
+  position: relative;
   white-space: nowrap;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   font-size: 4rem;
   overflow: hidden;
   margin-bottom: 0;
@@ -128,7 +129,7 @@ h1.hello {
       width: 0px;
   }
   30%, 60% {
-      width: 394.09px; /* Adjust width according to text length */
+      width: 370px; /* Adjust width according to text length */
   }
 }
 
