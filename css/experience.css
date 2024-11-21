@@ -65,13 +65,15 @@ body {
   font-size: 0.5rem;
 }
 
-.aboutme {
+.exp {
   font-weight: bold;
   color: #9aa5ce;
   font-size: 4rem;
 }
-
-.aboutp {
+.highlight {
+    color: #f7768e;
+}
+.expp {
   color: lightgrey;
   font-size: 21px;
 }

@@ -11,6 +11,14 @@
       crossorigin="anonymous"
     />
     <link href="css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
   </head>
   <body>
     <div class="container-fluid">
@@ -54,8 +62,8 @@
                   Projects
                 </a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="project1.html">Project 1</a>
-                  <a class="dropdown-item" href="project2.html">Project 2</a>
+                  <a class="dropdown-item" href="project1.html">Lexical Analyzer</a>
+                  <a class="dropdown-item" href="project2.html">Tyler's Life</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -124,8 +132,8 @@
                 <p class="intro" style="max-width: 75%">
                   <!-- Limit the intro text to 9 columns (75% of 12 columns) -->
                   I'm a software engineer seeking an internship to develop my
-                  programming skills.
-                  I love making games and system/web applications.
+                  programming skills. I love making games and system/web
+                  applications.
                 </p>
               </div>
             </div>
@@ -157,14 +165,14 @@
             <div class="card" style="width: 18rem">
               <img
                 class="card-img-top"
-                src="assets/img/album2.JPEG"
+                src="assets/img/lex.png"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Bootstrap Project</h5>
-                <p class="card-text">A project.</p>
-                <a href="album2.html" class="btn btn-primary"
-                  >Bootstrap Project</a
+                <h5 class="card-title">Lexical Analyzer</h5>
+                <p class="card-text">A C++ Project.</p>
+                <a href="project2.html" class="btn btn-primary"
+                  >Lexical Analyzer</a
                 >
               </div>
             </div>
@@ -175,14 +183,14 @@
             <div class="card" style="width: 18rem">
               <img
                 class="card-img-top"
-                src="assets/img/album3.JPG"
+                src="assets/img/tylerslife.png"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Mountain Adventure</h5>
-                <p class="card-text">Hiking and camping in the mountains.</p>
-                <a href="album3.html" class="btn btn-primary"
-                  >Mountain Adventure</a
+                <h5 class="card-title">Tyler's Life</h5>
+                <p class="card-text">2D RPG Game.</p>
+                <a href="project2.html" class="btn btn-primary"
+                  >Tyler's Life</a
                 >
               </div>
             </div>

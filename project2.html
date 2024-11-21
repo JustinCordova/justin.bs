@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler's Life</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="css/project1.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          <nav
+            class="navbar navbar-expand-md justify-content-start bg-#1a1b26 navbar-dark col-12"
+          >
+            <div id="mac-controls">
+              <a href="#home" class="mac-circle red-circle"></a>
+              <a href="#home" class="mac-circle yellow-circle"></a>
+              <a href="#home" class="mac-circle green-circle"></a>
+            </div>
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">justin cordova</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <!-- Links -->
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbardrop"
+                    data-toggle="dropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Projects
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="project1.html">Lexical Analyzer</a>
+                    <a class="dropdown-item" href="project2.html">Tyler's Life</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="experience.html">Experience</a>
+                </li>
+  
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbardrop"
+                    data-toggle="dropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Photography
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="album1.html">Album 1</a>
+                    <a class="dropdown-item" href="album2.html">Album 2</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- Left side content (Title and Description) -->
+          <div class="col-md-3">
+            <div class="mt-5">
+            <h1 class="project">Tyler's Life</h1>
+            <p class="projectp">
+                Tyler's Life is a 2D adventure RPG set in a vibrant, pixel-art world where you take on the role of Tyler, an ordinary person with extraordinary potential. Inspired by classic games like Pokémon, this early-stage project invites players to explore an expansive world filled with quirky characters, mysterious creatures, and challenging obstacles.
+
+As Tyler, you’ll embark on a journey of discovery, collecting items, solving puzzles, and building relationships with the diverse inhabitants of the world. Your choices will shape your adventure, with battles, exploration, and personal growth at its core.
+
+Whether you're wandering through lush forests, navigating bustling towns, or uncovering hidden secrets, Tyler's Life promises an engaging and nostalgic experience that blends the charm of retro games with a fresh, modern twist.
+            </p>
+        </div>
+        </div>
+
+        <!-- Right side content (Jumbotron) -->
+        <div class="col-md-9">
+            <div class="mt-5 custom-jumbotron rounded custom-width">
+                <div class="image-container">
+                    <img class="img" src="assets/img/tylerslife.png" alt="Image 1" onclick="expandImage(this)">
+                    <img class="img" src="assets/img/gamepanel.png" alt="Image 2" onclick="expandImage(this)">
+                    <img class="img" src="assets/img/tilemanagaer.png" alt="Image 2" onclick="expandImage(this)">
+                </div>                
+            </div>
+        </div>
+    </div>
+
+          <!--Footer-->
+      <footer class="footer page-footer font-small">
+        <div class="container">
+          <div class="row">
+            <span class="text-muted"
+              >&copy; Justin Cordova, 2024 | Terms Of Use | Privacy
+              Statement</span
+            >
+          </div>
+        </div>
+      </footer>
+        </div>
+      <!-- Javascript Bundle with Popper -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
