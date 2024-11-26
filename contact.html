@@ -1,104 +1,161 @@
+<!-- DEVELOPER:Justin Cordova, IS117-003, Fall 2024 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Bootstrap Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous">
-    <link href="css/main.css" rel="stylesheet">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="css/contact.css" rel="stylesheet" />
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row">
-            <nav class="navbar navbar-expand-md
-                    justify-content-start
-                    bg-dark navbar-dark
-                    col-12">
-
-                <!-- Brand -->
-                <a class="navbar-brand" href="#">Logo</a>
-                <!-- Responsive Button for the smaller menu -->
-                <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <!-- Links -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-
-                        <!-- Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
-                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Education
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
-                                <a class="dropdown-item" href="#">Link 4</a>
-                            </div>
-                        </li>
-                    </ul>
+    <div class="container-fluid">
+        <div class="row">
+          <nav
+            class="navbar navbar-expand-md justify-content-start bg-#1a1b26 navbar-dark col-12"
+          >
+            <div id="mac-controls">
+              <a href="index.html" class="mac-circle red-circle"></a>
+              <a href="index.html" class="mac-circle yellow-circle"></a>
+              <a href="index.html" class="mac-circle green-circle"></a>
+            </div>
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">justin cordova</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <!-- Links -->
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbardrop"
+                    data-toggle="dropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Projects
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="project1.html">Project 1</a>
+                    <a class="dropdown-item" href="project2.html">Project 2</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="experience.html">Experience</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbardrop"
+                    data-toggle="dropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Photography
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="album1.html">Album 1</a>
+                    <a class="dropdown-item" href="album2.html">Album 2</a>
+                  </div>
+                </li>
+                <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbardrop"
+                  data-toggle="dropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="contact.html">Contact</a>
+                  <a class="dropdown-item" href="freelance.html">Freelance</a>
                 </div>
-            </nav>
+              </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- Contact Me Section -->
+          <div class="row justify-content-center text-center mt-5">
+            <!-- Freelance Project Form -->
+        <form class="bg-light p-5 rounded shadow col-lg-6 col-md-8 col-sm-10">
+            <!-- Form Header -->
+            <div class="text-center mb-4">
+                <h1 class="fw-bold contactme">Contact Me</h1>
+            </div>
+            <!-- Contact Icons -->
+            <div class="text-center mt-4">
+              <a href="mailto:your-email@example.com" target="_blank" class="mx-3">
+                  <img src="assets/img/email-icon.png" alt="Email" class="icon-black" style="width: 40px; height: 40px;">
+              </a>
+              <a href="https://www.linkedin.com/in/justinalolorcordova/" target="_blank" class="mx-3">
+                  <img src="assets/img/linkedin-icon.png" alt="LinkedIn" class="icon-black" style="width: 40px; height: 40px;">
+              </a>
+              <a href="https://github.com/JustinCordova" target="_blank" class="mx-3">
+                  <img src="assets/img/github-icon.png" alt="GitHub" class="icon-black" style="width: 40px; height: 40px;">
+              </a>
+            </div>
+            <!-- Your Name -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+            </div>
+            <!-- Email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </div>
+        </form>
+        </div>
+          <!--Footer-->
+      <footer class="footer page-footer font-small">
         <div class="container">
           <div class="row">
-            <form action="">
-                <div class="form-group">
-                    <label for="firstname">First Name:</label>
-                    <input type="text" class="form-control" id="firstname"
-                           placeholder="First name" name="firstname">
-                </div>
-                <div class="form-group">
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" class="form-control" id="lastname"
-                           placeholder="Last name" name="lastname">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email"
-                           placeholder="Enter email" name="email">
-                </div>
-                <div class="form-group form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input"
-                               type="checkbox" name="subscribe"> Subscribe
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </row>
-</div>
+            <span class="text-muted"
+              >&copy; Justin Cordova, 2024 | Terms Of Use | Privacy
+              Statement</span
+            >
+          </div>
         </div>
- <footer class="footer page-footer font-small ">
-     <div class="container">
-        <div class="row">
-            <span class="text-muted">&copy; Art Hendela, 2021 |  Terms Of Use  |  Privacy Statement</span>
+      </footer>
         </div>
-     </div>
-  </footer>
-</div>
-
-
-    <!-- Javascript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous">
-</script>
-
+      <!-- Javascript Bundle with Popper -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>

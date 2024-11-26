@@ -1,9 +1,11 @@
+/* DEVELOPER:Justin Cordova, IS117-003, Fall 2024 */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Cabin&display=swap");
 
 body {
   background-color: #1a1b26;
   font-family: "Cabin", sans-serif;
+  overflow: hidden;
 }
 
 /* Mac Controls Styling */
@@ -67,7 +69,7 @@ body {
 
 .project {
   font-weight: bold;
-  color: #9aa5ce;
+  color: #f7768e;
   font-size: 4rem;
 }
 
@@ -88,15 +90,15 @@ body {
 }
 
 .image-container {
-    display: grid; /* Use CSS Grid */
-    grid-template-columns: repeat(3, 1fr); /* 2 equal columns */
-    gap: 10px; /* Optional: Add space between images */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .image-container img {
-    width: 100%; /* Make the image fill its grid cell */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Optional: Crop if needed */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .img {
@@ -104,6 +106,6 @@ body {
 }
 
 .img:hover {
-    transform: scale(1.3); /* Scale image to 110% */
-    filter: brightness(0.9); /* Slightly darken the image */
+    transform: scale(1.3);
+    filter: brightness(0.9);
 }

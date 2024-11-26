@@ -3,13 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Cabin&display=swap");
 
 body {
-  font-family: "Cabin", sans-serif;
   background-color: #1a1b26;
+  font-family: "Cabin", sans-serif;
 }
 
 /* Mac Controls Styling */
 #mac-controls {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 20px;
   display: flex;
@@ -66,19 +66,35 @@ body {
   font-size: 0.5rem;
 }
 
-.exps {
-  margin-bottom: 50px;
-}
-
-.exp {
+.contactme {
   font-weight: bold;
   color: #f7768e;
   font-size: 4rem;
 }
-.highlight {
-    color: #9aa5ce;
+
+.form-label {
+  font-weight: bold;
+  color: #9aa5ce;
+  font-size: 1rem;
 }
-.expp {
-  color: lightgrey;
-  font-size: 21px;
+
+.iconp {
+  font-weight: bold;
+  color: #9aa5ce;
+  font-size: 2rem;
+}
+
+.icon-img {
+  width: 80px;
+  height: auto;
+}
+
+.icon-black {
+  filter: brightness(0) invert(0);
+  transition: filter 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.icon-black:hover {
+  transform: scale(1.3);
 }

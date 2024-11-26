@@ -1,9 +1,11 @@
+/* DEVELOPER:Justin Cordova, IS117-003, Fall 2024 */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Cabin&display=swap");
 
 body {
   background-color: #1a1b26;
   font-family: "Cabin", sans-serif;
+  overflow: hidden;
 }
 
 /* Mac Controls Styling */
